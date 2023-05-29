@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    position: fixed;
+    color: #fff;
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    justify-content: right;
+    z-index: 2;
+}
+
+.landing-page{
+    width: 100%;
+    background: url(images/nikolai-chernichenko-4DLzZXyC8_k-unsplash.jpg);
+    height: 100vh;
+    background-size: cover;
+    position: absolute;
+}
+
+.landing-page .overlay{
+    background: linear-gradient( to bottom left, #000000da, #1414148e);
+    height: 100%;
+}
+
+.landing-page .landing-content{
+    position: relative;
+    bottom: 21em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.landing-page .landing-content h1{
+    color: #fff;
+    font-size: 35px;
+}
+.landing-page .landing-content span{
+    color: rgb(58, 58, 182);
+}
+
+.landing-page .landing-content a button{
+    background: none;
+    border: none;
+    border-bottom: 2px solid rgb(58, 58, 182);
+    color: #fff;
+    font-size: 14px;
+    margin-top: 12px;
+    padding: 8px 13px;
+    transition: all ease .7s;
+    border-radius: 5px;
+}
+
+.landing-page .landing-content a button:hover{
+    background: rgb(58, 58, 182);
+    border-radius: 5px;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: #fff;
+    font-size: 10.5px; 
+    letter-spacing: 1px;   
+}
+
+@media only screen and (max-width: 300px){
+    nav{
+        font-size: 15px;
+    }
+
+    .landing-page .landing-content{
+        padding: 0 10px;
+        align-items: start;
+        bottom: 25em;
+    }
+
+    .landing-page .landing-content h1{
+        font-size: 31px;
+    }
+    .landing-page .landing-content a button{
+        margin-top: 32px;
+    }
+
+    footer{
+        font-size: 8.5px;
+
+    }
+}
